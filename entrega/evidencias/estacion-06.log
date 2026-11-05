@@ -1,6 +1,6 @@
 Compilacion: javac --release 17 -encoding UTF-8 -Xlint:all
-Ejecucion: java -Dfile.encoding=UTF-8 -cp target/estacion-06 biblioteca.Main
-Notificación a Laura: su reserva R-09FD5130 cambió de Pendiente a Confirmada.
-Evento registrado: R-09FD5130 cambió de Pendiente a Confirmada.
-Reserva R-09FD5130 | Laura | 2026-11-11 14:00 | Sala B (B, capacidad: 4) | Estado: Confirmada
+Ejecucion: java -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -cp target/estacion-06 biblioteca.Main
+Notificación a Laura: su reserva R-E9D6CFDF cambió de Pendiente a Confirmada.
+Evento registrado: R-E9D6CFDF cambió de Pendiente a Confirmada.
+Reserva R-E9D6CFDF | Laura | 2026-11-11 14:00 | Sala B (B, capacidad: 4) | Estado: Confirmada
 Reservas registradas: 1

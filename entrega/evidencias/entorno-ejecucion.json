@@ -1,12 +1,12 @@
 {
-  "ejecutadoUtc": "2026-11-05T04:30:03.6790391Z",
-  "ejecutadoBogota": "2026-11-04 23:30:03",
+  "ejecutadoUtc": "2026-11-05T04:38:07.1449212Z",
+  "ejecutadoBogota": "2026-11-04 23:38:07",
   "zonaHoraria": "America/Bogota",
   "javaHome": "C:\\Users\\aleja\\.jdks\\ms-17.0.21.0.2",
   "javaVersion": "openjdk version \"17.0.21.0.2\" 2026-10-22 LTS\r\nOpenJDK Runtime Environment Microsoft-15779939 (build 17.0.21.0.2+1-LTS)\r\nOpenJDK 64-Bit Server VM Microsoft-15779939 (build 17.0.21.0.2+1-LTS, mixed mode, sharing)",
   "javacVersion": "javac 17.0.21.0.2",
   "powershellVersion": "7.6.5",
-  "clasesTemporales": "C:\\Users\\aleja\\AppData\\Local\\Temp\\BibliotecaReservas-pruebas-250e9069500c4d408696df0ec576f0ba",
+  "clasesTemporales": "C:\\Users\\aleja\\AppData\\Local\\Temp\\BibliotecaReservas-pruebas-25d681293d794dda9504baa870f876d4",
   "fuentesOficiales": 21,
   "compilacionExitCode": 0,
   "pruebasExitCode": 0,
@@ -14,7 +14,7 @@
   "fuentesSha256": [
     {
       "Path": "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\Cancelada.java",
-      "Hash": "6D0FF227930C928B1494FA89157C6FE416E49ACB4D98AC42A54F638A6B3F0CB0"
+      "Hash": "94A04D4C4CDAF1A3400877C4393FD701B2C4BB064BCDBFB52F8486BA7639240C"
     },
     {
       "Path": "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\Confirmada.java",
@@ -34,11 +34,11 @@
     },
     {
       "Path": "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\Finalizada.java",
-      "Hash": "931AC5EB2B41696466CCF576B16F4676DD703120554A945FB9633CDCD3228F7E"
+      "Hash": "5F1EBEBE4DD50D91AE06AAE1794E78205D7402599D31FF450FF8DA790CD04054"
     },
     {
       "Path": "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\Main.java",
-      "Hash": "EB5FB648F508319200A6B1FCFF69AC38320396EAE707B2A01089D55E24960491"
+      "Hash": "6D30A5F77B388A2553F5B8914C1FC50664B4E03C95CF6CAFF02603B045B267B0"
     },
     {
       "Path": "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\NotificadorEstudiante.java",

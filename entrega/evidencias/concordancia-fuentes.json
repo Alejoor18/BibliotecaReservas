@@ -1,0 +1,65 @@
+{
+  "alcance": "Concordancia estática con inspección visual, no sustituye pruebas de ejecución",
+  "comprobadoUtc": "2026-11-05T04:38:07.520958+00:00",
+  "controles": [
+    {
+      "criterio": "21 nombres de archivo exactos",
+      "cumple": true
+    },
+    {
+      "criterio": "Paquete biblioteca en todos los archivos",
+      "cumple": true
+    },
+    {
+      "criterio": "Main final igual a transcripción visual por tokens",
+      "cumple": true
+    },
+    {
+      "criterio": "Código UUID y ausencia de codigo manual",
+      "cumple": true
+    },
+    {
+      "criterio": "horaInicio y getNombreEstado",
+      "cumple": true
+    },
+    {
+      "criterio": "cambiarEstado interno y sin getter estado",
+      "cumple": true
+    },
+    {
+      "criterio": "Observer itera copia y métodos alta/baja",
+      "cumple": true
+    },
+    {
+      "criterio": "Texto literal Evento registrado",
+      "cumple": true
+    },
+    {
+      "criterio": "Ausencia de anotaciones ajenas a captura11",
+      "cumple": true
+    }
+  ],
+  "fuentesSha256": {
+    "Cancelada.java": "94a04d4c4cdaf1a3400877c4393fd701b2c4bb064bcdbfb52f8486ba7639240c",
+    "Confirmada.java": "b47820bf022e79f30c95b4af601a47eb981c64e78a64ec366cb797d7b734fb75",
+    "EstadoReserva.java": "bf3c3c946652b70d246c6273af6799452ed4574e186b02105310f0975971251a",
+    "EstrategiaSeleccionSala.java": "39cdf3759fc2e9eea25203f14d7d3800e764eb07d88c916785a56ae647148215",
+    "Estudiante.java": "05ad33b0046ddef95133a76c91f6e66173f37b419242ceb754f1ac5498ff6e3f",
+    "Finalizada.java": "5f1ebebe4dd50d91ae06aae1794e78205d7402599d31ff450ff8da790cd04054",
+    "Main.java": "6d30a5f77b388a2553f5b8914c1fc50664b4e03c95cf6caff02603b045b267b0",
+    "NotificadorEstudiante.java": "23eb84633d18c52402456d82d0e2d3ffd6c82d50bef55fa161fc6ef008db3232",
+    "ObservadorReserva.java": "715f1b3a1933839b12f1779face4bc82f2b34ed6cc3a4e5f45160ce4126fb895",
+    "Pendiente.java": "86edda94c6bf20004c47ac35730513d54b8dd2bc7c355b27012a9c98fa35de65",
+    "RegistroEventos.java": "9167d90a3aec866699120b2f472e87cd6e7d6319e1ca4ae3d846e9f8659873b3",
+    "RepositorioReservas.java": "ea267fd75aa554f584d3f54a078d586b6b784872277308be4a54a51133308e6f",
+    "RepositorioReservasMemoria.java": "ef8265e31e1ef523df8454bea0d8bb58cd3ed019f1ab4f5294f83be9f24f4086",
+    "RepositorioSalas.java": "cc49b2f9b60c1b4634e0b6394fdbe08d17b9a7ffa10bb70bb82511e442a46105",
+    "RepositorioSalasMemoria.java": "d3ab001f44b8487a9cd6a7bd1c29ee8a774f493e5c6d967ca74e9cc76b985b4e",
+    "Reserva.java": "47cfb5ad1a8801c96f2322307cfbb29590ef8b4d5327514816788b60f2bd3a63",
+    "ReservaBuilder.java": "0c21c1e5f9a4e1a0e1baa4929a45398fc46b5c02672ef0aacead42590d888b27",
+    "ReservaFacade.java": "05bb1ba3f25c091a8dcdbb56c676209d87f54769c5bf5fe29c891ead7180aac8",
+    "Sala.java": "fd1aee64bd58abcc31f2007edc8dcba4afa819e72aa17a9181e57d1f33bf5334",
+    "SeleccionPorCapacidad.java": "e5e7cc3b0a961c052c6f9b81e5cfbcc233a774b4965a32781f36f23df15161ba",
+    "SeleccionSalaPreferida.java": "70212b66eee69f8fc586d492917f434895f1a08c5be14ef77b4baf747dc07190"
+  }
+}

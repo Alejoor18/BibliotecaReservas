@@ -1,0 +1,7 @@
+?? .gitattributes
+?? entrega/evidencias/git-historial.log
+?? entrega/evidencias/git-ramas.log
+?? entrega/evidencias/publicacion-github.log
+?? entrega/evidencias/ramas-remotas.log
+
+EXIT_CODE=0

@@ -1,0 +1,25 @@
+branch 'master' set up to track 'origin/master'.
+branch 'codex/punto-partida' set up to track 'origin/codex/punto-partida'.
+branch 'codex/estacion-01' set up to track 'origin/codex/estacion-01'.
+branch 'codex/estacion-02' set up to track 'origin/codex/estacion-02'.
+branch 'codex/estacion-03' set up to track 'origin/codex/estacion-03'.
+branch 'codex/estacion-04' set up to track 'origin/codex/estacion-04'.
+branch 'codex/estacion-05' set up to track 'origin/codex/estacion-05'.
+branch 'codex/estacion-06' set up to track 'origin/codex/estacion-06'.
+branch 'codex/estacion-07' set up to track 'origin/codex/estacion-07'.
+branch 'codex/estacion-08' set up to track 'origin/codex/estacion-08'.
+branch 'codex/entrega-final' set up to track 'origin/codex/entrega-final'.
+To https://github.com/Alejoor18/BibliotecaReservas
+   5d8bbbe..581880e  master -> master
+ * [new branch]      codex/punto-partida -> codex/punto-partida
+ * [new branch]      codex/estacion-01 -> codex/estacion-01
+ * [new branch]      codex/estacion-02 -> codex/estacion-02
+ * [new branch]      codex/estacion-03 -> codex/estacion-03
+ * [new branch]      codex/estacion-04 -> codex/estacion-04
+ * [new branch]      codex/estacion-05 -> codex/estacion-05
+ * [new branch]      codex/estacion-06 -> codex/estacion-06
+ * [new branch]      codex/estacion-07 -> codex/estacion-07
+ * [new branch]      codex/estacion-08 -> codex/estacion-08
+ * [new branch]      codex/entrega-final -> codex/entrega-final
+
+EXIT_CODE=0

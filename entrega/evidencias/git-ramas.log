@@ -1,0 +1,25 @@
+  codex/entrega-final                581880e [origin/codex/entrega-final] docs: entregar informe academico PDF y evidencias verificadas
+  codex/estacion-01                  4b8a602 [origin/codex/estacion-01] docs: modelar flujo y comparar el proyecto con la guia
+  codex/estacion-02                  82036bc [origin/codex/estacion-02] fix: validar las salas y conservar la ejecucion inicial de dominio
+  codex/estacion-03                  c291577 [origin/codex/estacion-03] fix: ajustar Builder y Reserva a las validaciones y API de la guia
+  codex/estacion-04                  8b92663 [origin/codex/estacion-04] test: ejecutar los tres escenarios de seleccion con Strategy
+  codex/estacion-05                  8a88ed0 [origin/codex/estacion-05] feat: integrar repositorios en memoria y coordinacion con Facade
+  codex/estacion-06                  b1ff249 [origin/codex/estacion-06] feat: notificar cambios validos mediante Observer
+  codex/estacion-07                  e1765c5 [origin/codex/estacion-07] test: comprobar State y los escenarios P01 a P11 sin frameworks
+  codex/estacion-08                  dd1322f [origin/codex/estacion-08] feat: integrar el Main final y documentar ejecucion reproducible
+  codex/punto-partida                7e13a4d [origin/codex/punto-partida] chore: preservar el avance local previo a completar la guia
+* master                             581880e [origin/master] docs: entregar informe academico PDF y evidencias verificadas
+  remotes/origin/HEAD                -> origin/master
+  remotes/origin/codex/entrega-final 581880e docs: entregar informe academico PDF y evidencias verificadas
+  remotes/origin/codex/estacion-01   4b8a602 docs: modelar flujo y comparar el proyecto con la guia
+  remotes/origin/codex/estacion-02   82036bc fix: validar las salas y conservar la ejecucion inicial de dominio
+  remotes/origin/codex/estacion-03   c291577 fix: ajustar Builder y Reserva a las validaciones y API de la guia
+  remotes/origin/codex/estacion-04   8b92663 test: ejecutar los tres escenarios de seleccion con Strategy
+  remotes/origin/codex/estacion-05   8a88ed0 feat: integrar repositorios en memoria y coordinacion con Facade
+  remotes/origin/codex/estacion-06   b1ff249 feat: notificar cambios validos mediante Observer
+  remotes/origin/codex/estacion-07   e1765c5 test: comprobar State y los escenarios P01 a P11 sin frameworks
+  remotes/origin/codex/estacion-08   dd1322f feat: integrar el Main final y documentar ejecucion reproducible
+  remotes/origin/codex/punto-partida 7e13a4d chore: preservar el avance local previo a completar la guia
+  remotes/origin/master              581880e docs: entregar informe academico PDF y evidencias verificadas
+
+EXIT_CODE=0

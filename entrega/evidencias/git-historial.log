@@ -1,0 +1,14 @@
+* 581880e (HEAD -> master, origin/master, origin/codex/entrega-final, origin/HEAD, codex/entrega-final) docs: entregar informe academico PDF y evidencias verificadas
+* cd3a7a8 fix: cerrar concordancia literal y validar la ejecucion final
+* dd1322f (origin/codex/estacion-08, codex/estacion-08) feat: integrar el Main final y documentar ejecucion reproducible
+* e1765c5 (origin/codex/estacion-07, codex/estacion-07) test: comprobar State y los escenarios P01 a P11 sin frameworks
+* b1ff249 (origin/codex/estacion-06, codex/estacion-06) feat: notificar cambios validos mediante Observer
+* 8a88ed0 (origin/codex/estacion-05, codex/estacion-05) feat: integrar repositorios en memoria y coordinacion con Facade
+* 8b92663 (origin/codex/estacion-04, codex/estacion-04) test: ejecutar los tres escenarios de seleccion con Strategy
+* c291577 (origin/codex/estacion-03, codex/estacion-03) fix: ajustar Builder y Reserva a las validaciones y API de la guia
+* 82036bc (origin/codex/estacion-02, codex/estacion-02) fix: validar las salas y conservar la ejecucion inicial de dominio
+* 4b8a602 (origin/codex/estacion-01, codex/estacion-01) docs: modelar flujo y comparar el proyecto con la guia
+* 7e13a4d (origin/codex/punto-partida, codex/punto-partida) chore: preservar el avance local previo a completar la guia
+* 5d8bbbe feat: implementar modelo inicial y patron Builder
+
+EXIT_CODE=0

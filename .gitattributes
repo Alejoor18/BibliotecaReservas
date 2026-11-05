@@ -1,0 +1,7 @@
+# Evitar que la conversion de finales de linea altere artefactos binarios.
+*.pdf binary
+*.png binary
+*.docx binary
+*.mp4 binary
+*.zip binary
+*.jar binary

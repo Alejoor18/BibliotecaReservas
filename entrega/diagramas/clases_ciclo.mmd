@@ -1,0 +1,31 @@
+classDiagram
+  class Reserva { -EstadoReserva estado
+-List~ObservadorReserva~ observadores
++confirmar() void
++cancelar() void
++finalizar() void
++agregarObservador(ObservadorReserva) void
++retirarObservador(ObservadorReserva) void
+~cambiarEstado(EstadoReserva) void }
+  class EstadoReserva { <<interface>>
++nombre() String
++confirmar(Reserva) void
++cancelar(Reserva) void
++finalizar(Reserva) void }
+  class Pendiente
+  class Confirmada
+  class Cancelada
+  class Finalizada
+  class ObservadorReserva { <<interface>>
++actualizar(Reserva, String, String) void }
+  class NotificadorEstudiante { +actualizar(Reserva, String, String) void }
+  class RegistroEventos { +actualizar(Reserva, String, String) void }
+  Reserva --> EstadoReserva : delega
+  Pendiente ..|> EstadoReserva
+  Confirmada ..|> EstadoReserva
+  Cancelada ..|> EstadoReserva
+  Finalizada ..|> EstadoReserva
+  Reserva o-- ObservadorReserva : suscriptores
+  NotificadorEstudiante ..|> ObservadorReserva
+  RegistroEventos ..|> ObservadorReserva
+  EstadoReserva ..> Reserva : cambia estado válido

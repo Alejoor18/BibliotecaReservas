@@ -1,0 +1,5 @@
+{
+  "entorno": "Windows 11 con Microsoft OpenJDK 17.0.21.0.2 y javac 17.0.21.0.2. Se compila con --release 17, -encoding UTF-8 y -Xlint:all. Las pruebas usan PowerShell y clases temporales, sin modificar la configuración global de Java. Los logs incluyen códigos de salida, comandos y hashes SHA256 de los 21 fuentes.",
+  "comandos": "# Ejecutar desde la raíz del proyecto\npowershell -ExecutionPolicy Bypass -File .\\ejecutar.ps1\n\n# Ejecutar las 45 pruebas nativas\npowershell -ExecutionPolicy Bypass -File .\\entrega\\pruebas\\ejecutar-pruebas.ps1\n\n# Con un JDK diferente\npowershell -ExecutionPolicy Bypass -File .\\ejecutar.ps1 -JavaHome \"C:\\ruta\\al\\jdk-17\"",
+  "estado_git": "El historial conserva el commit original y un checkpoint del avance local previo a las correcciones. Cada estación nueva corresponde a un commit con cambios o evidencias reales. La tabla muestra commits no merge anteriores a la generación del PDF; el gráfico completo y la comprobación de publicación se conservan como evidencias Git separadas para evitar una referencia circular al hash del propio documento."
+}

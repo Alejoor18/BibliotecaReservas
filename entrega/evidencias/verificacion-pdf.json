@@ -1,0 +1,51 @@
+{
+  "pdf": "Informe_BibliotecaReservas.pdf",
+  "sha256": "fc427079465aca028c091ae2c37c50412148388ba1b99760874ca6d6bfb4d716",
+  "paginas": 15,
+  "caracteresPorPagina": [
+    929,
+    1898,
+    460,
+    922,
+    818,
+    2192,
+    1690,
+    2018,
+    1570,
+    2698,
+    1441,
+    1920,
+    1732,
+    2504,
+    2368
+  ],
+  "matrizP01P11": true,
+  "evidenciasP01P11": true,
+  "reflexiones14a22": true,
+  "sinMarcadoresPendientes": true,
+  "nota": "Esta comprobación estructural se complementa con la inspección visual de las 15 páginas renderizadas mediante Poppler.",
+  "paginasInspeccionadasVisualmente": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "sinDesbordamientosNiSolapamientosObservados": true,
+  "renderizado": "Poppler pdftoppm del runtime de Codex a 110 DPI",
+  "entradasSha256": {
+    "resultados-pruebas.json": "2d0957f59a1bc50ed096fc96405dbb5052129b69ecfe0a0ebaed8b05c2124176",
+    "ejecucion-main.log": "bdee54e5b5fcc2f8e5058a616031feedc7794a07b0a01e53ea812ddb76d4949e",
+    "pruebas.log": "adbeac0787aaf831272035263546e58963bd791e3d2e661cae6da1c27d8e91d7"
+  }
+}

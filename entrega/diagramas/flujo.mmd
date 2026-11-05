@@ -1,0 +1,20 @@
+flowchart TD
+  S([Inicio]) --> D[Estudiante registra solicitud]
+  D --> F[ReservaFacade consulta RepositorioSalas]
+  F --> E[Strategy busca una sala suficiente]
+  E --> Q{¿Hay sala adecuada?}
+  Q -- No --> N[Devuelve Optional.empty sin guardar ni confirmar]
+  Q -- Sí --> B[Builder valida datos y crea Reserva Pendiente]
+  B --> O[Facade registra observadores]
+  O --> G[RepositorioReservas guarda la reserva]
+  G --> C[Facade solicita confirmar]
+  C --> ST[State acepta Pendiente a Confirmada]
+  ST --> NT[Observer notifica estudiante y registro]
+  NT --> A{Operación posterior}
+  A -- Cancelar --> CA[State pasa a Cancelada y notifica]
+  A -- Finalizar --> FI[State pasa a Finalizada y notifica]
+  A -- Inválida --> RE[IllegalStateException sin evento]
+  N --> Z([Fin])
+  CA --> Z
+  FI --> Z
+  RE --> Z

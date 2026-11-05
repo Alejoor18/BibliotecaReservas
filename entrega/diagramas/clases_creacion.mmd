@@ -1,0 +1,52 @@
+classDiagram
+  class Main { +main(String[] args) void }
+  class ReservaFacade { -RepositorioSalas repositorioSalas
+-RepositorioReservas repositorioReservas
+-List~ObservadorReserva~ observadores
++realizarReserva(...) Optional~Reserva~ }
+  class RepositorioSalas { <<interface>>
++obtenerDisponibles() List~Sala~ }
+  class RepositorioReservas { <<interface>>
++guardar(Reserva) void }
+  class RepositorioSalasMemoria { -List~Sala~ salas
++obtenerDisponibles() List~Sala~ }
+  class RepositorioReservasMemoria { -List~Reserva~ reservas
++guardar(Reserva) void
++obtenerTodas() List~Reserva~ }
+  class EstrategiaSeleccionSala { <<interface>>
++seleccionar(List~Sala~, int) Optional~Sala~ }
+  class SeleccionPorCapacidad { +seleccionar(List~Sala~, int) Optional~Sala~ }
+  class SeleccionSalaPreferida { -String codigoPreferido
++seleccionar(List~Sala~, int) Optional~Sala~ }
+  class ReservaBuilder { -Estudiante estudiante
+-LocalDate fecha
+-LocalTime horaInicio
+-int duracionHoras
+-int cantidadPersonas
+-Sala sala
++build() Reserva }
+  class Reserva { -String codigo
+-LocalDate fecha
+-LocalTime horaInicio
+-int duracionHoras
+-int cantidadPersonas
++getNombreEstado() String }
+  class Estudiante { -String identificador
+-String nombre }
+  class Sala { -String codigo
+-String nombre
+-int capacidad }
+  Main --> ReservaFacade : configura y usa
+  ReservaFacade --> RepositorioSalas : consulta
+  ReservaFacade --> RepositorioReservas : guarda
+  RepositorioSalasMemoria ..|> RepositorioSalas
+  RepositorioReservasMemoria ..|> RepositorioReservas
+  RepositorioSalasMemoria o-- Sala
+  RepositorioReservasMemoria o-- Reserva
+  ReservaFacade ..> EstrategiaSeleccionSala : recibe en cada solicitud
+  SeleccionPorCapacidad ..|> EstrategiaSeleccionSala
+  SeleccionSalaPreferida ..|> EstrategiaSeleccionSala
+  ReservaFacade ..> ReservaBuilder : usa
+  ReservaBuilder ..> Reserva : crea
+  Reserva --> Estudiante : estudiante
+  Reserva --> Sala : sala

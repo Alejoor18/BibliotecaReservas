@@ -1,0 +1,3 @@
+Compilacion: javac --release 17 -encoding UTF-8 -Xlint:all
+Ejecucion: java -Dfile.encoding=UTF-8 -cp target/estacion-03 biblioteca.Main
+Reserva R-2D1D9E3A | Laura | 2026-11-11 14:00 | Sala B (B, capacidad: 4) | Estado: Pendiente

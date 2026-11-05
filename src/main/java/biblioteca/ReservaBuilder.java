@@ -1,69 +1,49 @@
-
 package biblioteca;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.UUID;
 
 public class ReservaBuilder {
-
-    private String codigo;
     private Estudiante estudiante;
     private LocalDate fecha;
-    private LocalTime horarioInicio;
+    private LocalTime horaInicio;
     private int duracionHoras;
     private int cantidadPersonas;
     private Sala sala;
 
-    public ReservaBuilder codigo(String codigo) {
-        this.codigo = codigo;
-        return this;
+    public ReservaBuilder estudiante(Estudiante valor) {
+        this.estudiante = valor; return this;
     }
-
-    public ReservaBuilder estudiante(Estudiante estudiante) {
-        this.estudiante = estudiante;
-        return this;
+    public ReservaBuilder fecha(LocalDate valor) {
+        this.fecha = valor; return this;
     }
-
-    public ReservaBuilder fecha(LocalDate fecha) {
-        this.fecha = fecha;
-        return this;
+    public ReservaBuilder horaInicio(LocalTime valor) {
+        this.horaInicio = valor; return this;
     }
-
-    public ReservaBuilder horarioInicio(LocalTime horarioInicio) {
-        this.horarioInicio = horarioInicio;
-        return this;
+    public ReservaBuilder duracionHoras(int valor) {
+        this.duracionHoras = valor; return this;
     }
-
-    public ReservaBuilder duracionHoras(int duracionHoras) {
-        this.duracionHoras = duracionHoras;
-        return this;
+    public ReservaBuilder cantidadPersonas(int valor) {
+        this.cantidadPersonas = valor; return this;
     }
-
-    public ReservaBuilder cantidadPersonas(int cantidadPersonas) {
-        this.cantidadPersonas = cantidadPersonas;
-        return this;
-    }
-
-    public ReservaBuilder sala(Sala sala) {
-        this.sala = sala;
-        return this;
+    public ReservaBuilder sala(Sala valor) {
+        this.sala = valor; return this;
     }
 
     public Reserva build() {
-        if (codigo == null || codigo.isBlank()
-                || estudiante == null || fecha == null
-                || horarioInicio == null || sala == null) {
-            throw new IllegalArgumentException(
-                    "Faltan datos obligatorios de la reserva.");
+        if (estudiante == null || fecha == null || horaInicio == null || sala == null) {
+            throw new IllegalStateException("Faltan datos obligatorios de la reserva.");
         }
-
-        if (duracionHoras <= 0 || cantidadPersonas <= 0
-                || cantidadPersonas > sala.getCapacidad()) {
-            throw new IllegalArgumentException(
-                    "Duración o cantidad de personas inválida.");
+        if (fecha.isBefore(LocalDate.now()) || duracionHoras <= 0
+                || cantidadPersonas <= 0) {
+            throw new IllegalStateException("Fecha, duración o cantidad de personas inválida.");
         }
-
-        return new Reserva(codigo, estudiante, fecha,
-                horarioInicio, duracionHoras, cantidadPersonas, sala);
+        if (sala.getCapacidad() < cantidadPersonas) {
+            throw new IllegalStateException("La sala no tiene capacidad suficiente.");
+        }
+        String codigo = "R-" + UUID.randomUUID().toString().substring(0, 8).toUpperCase();
+        return new Reserva(codigo, estudiante, fecha, horaInicio,
+                duracionHoras, cantidadPersonas, sala);
     }
 }

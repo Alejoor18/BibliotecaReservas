@@ -13,12 +13,14 @@ public class Main {
 
         Sala sala = new Sala("B", "Sala B", 4);
 
-        Reserva reserva = new Reserva.Builder()
+        Reserva reserva = new ReservaBuilder()
+                .codigo("R001")
                 .estudiante(estudiante)
                 .sala(sala)
                 .fecha(LocalDate.of(2026, 11, 5))
-                .hora(LocalTime.of(10, 0))
-                .participantes(3)
+                .horarioInicio(LocalTime.of(10, 0))
+                .duracionHoras(2)
+                .cantidadPersonas(3)
                 .build();
 
         System.out.println("=== SISTEMA DE BIBLIOTECA ===");

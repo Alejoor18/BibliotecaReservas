@@ -5,75 +5,81 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class Reserva {
+    private final String codigo;
     private final Estudiante estudiante;
-    private final Sala sala;
     private final LocalDate fecha;
-    private final LocalTime hora;
-    private final int participantes;
+    private final LocalTime horarioInicio;
+    private final int duracionHoras;
+    private final int cantidadPersonas;
+    private final Sala sala;
+    private EstadoReserva estado;
 
-    private Reserva(Builder builder) {
-        this.estudiante = builder.estudiante;
-        this.sala = builder.sala;
-        this.fecha = builder.fecha;
-        this.hora = builder.hora;
-        this.participantes = builder.participantes;
+    Reserva(String codigo, Estudiante estudiante,
+            LocalDate fecha, LocalTime horarioInicio,
+            int duracionHoras, int cantidadPersonas, Sala sala) {
+        this.codigo = codigo;
+        this.estudiante = estudiante;
+        this.fecha = fecha;
+        this.horarioInicio = horarioInicio;
+        this.duracionHoras = duracionHoras;
+        this.cantidadPersonas = cantidadPersonas;
+        this.sala = sala;
+        this.estado = new Pendiente();
     }
 
-    public static class Builder {
-        private Estudiante estudiante;
-        private Sala sala;
-        private LocalDate fecha;
-        private LocalTime hora;
-        private int participantes;
-
-        public Builder estudiante(Estudiante estudiante) {
-            this.estudiante = estudiante;
-            return this;
-        }
-
-        public Builder sala(Sala sala) {
-            this.sala = sala;
-            return this;
-        }
-
-        public Builder fecha(LocalDate fecha) {
-            this.fecha = fecha;
-            return this;
-        }
-
-        public Builder hora(LocalTime hora) {
-            this.hora = hora;
-            return this;
-        }
-
-        public Builder participantes(int participantes) {
-            this.participantes = participantes;
-            return this;
-        }
-
-        public Reserva build() {
-            if (estudiante == null || sala == null ||
-                    fecha == null || hora == null) {
-                throw new IllegalArgumentException(
-                        "Faltan datos obligatorios");
-            }
-
-            if (participantes <= 0 ||
-                    participantes > sala.getCapacidad()) {
-                throw new IllegalArgumentException(
-                        "Cantidad de participantes no valida");
-            }
-
-            return new Reserva(this);
-        }
+    public String getCodigo() {
+        return codigo;
     }
+
+    public Estudiante getEstudiante() {
+        return estudiante;
+    }
+
+    public LocalDate getFecha() {
+        return fecha;
+    }
+
+    public LocalTime getHorarioInicio() {
+        return horarioInicio;
+    }
+
+    public int getDuracionHoras() {
+        return duracionHoras;
+    }
+
+    public int getCantidadPersonas() {
+        return cantidadPersonas;
+    }
+
+    public Sala getSala() {
+        return sala;
+    }
+
+    public EstadoReserva getEstado() {
+        return estado;
+    }
+
+    public void cambiarEstado(EstadoReserva nuevoEstado) {
+        this.estado = nuevoEstado;
+    }
+
+    public void confirmar() {
+        estado.confirmar(this);
+    }
+
+    public void cancelar() {
+        estado.cancelar(this);
+    }
+
+    public void finalizar() {
+        estado.finalizar(this);
+    }
+
 
     @Override
     public String toString() {
-        return "Reserva: " + estudiante.getNombre()
-                + " | " + sala.getNombre()
-                + " | Fecha: " + fecha
-                + " | Hora: " + hora
-                + " | Participantes: " + participantes;
+        return "Reserva " + codigo + " | " + estudiante.getNombre()
+                + " | " + fecha + " " + horarioInicio
+                + " | Estado: " + estado.nombre();
     }
 }

@@ -2,12 +2,16 @@
 package biblioteca;
 
 public class Sala {
-
-    private String codigo;
-    private String nombre;
-    private int capacidad;
+    private final String codigo;
+    private final String nombre;
+    private final int capacidad;
 
     public Sala(String codigo, String nombre, int capacidad) {
+        if (codigo == null || codigo.isBlank()
+                || nombre == null || nombre.isBlank()) {
+            throw new IllegalArgumentException(
+                    "Los identificadores de sala son inválidos.");
+        }
         this.codigo = codigo;
         this.nombre = nombre;
         this.capacidad = capacidad;
@@ -23,11 +27,5 @@ public class Sala {
 
     public int getCapacidad() {
         return capacidad;
-    }
-
-    @Override
-    public String toString() {
-        return nombre + " (" + codigo +
-                ") - Capacidad: " + capacidad;
     }
 }

@@ -1,0 +1,12 @@
+git diff origin/master --
+diff --git a/pom.xml b/pom.xml
+index c6a6635..df1bcaf 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -1,4 +1,3 @@
+-
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project xmlns="http://maven.apache.org/POM/4.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+EXIT_CODE=0

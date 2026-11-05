@@ -1,0 +1,15 @@
+git diff-tree --root --no-commit-id --name-status -r e1765c5820e1661782c93a8d4005500857b8ccd6
+A	entrega/estacion-07-state.md
+A	entrega/evidencias/comandos-ejecutados.log
+A	entrega/evidencias/compilacion.log
+A	entrega/evidencias/ejecucion-main.log
+A	entrega/evidencias/entorno-ejecucion.json
+M	entrega/evidencias/estacion-06.log
+A	entrega/evidencias/estacion-07.log
+A	entrega/evidencias/pruebas.log
+A	entrega/evidencias/resultados-pruebas.json
+A	entrega/pruebas/LEEME.md
+A	entrega/pruebas/PruebasBiblioteca.java
+A	entrega/pruebas/ejecutar-pruebas.ps1
+
+EXIT_CODE=0

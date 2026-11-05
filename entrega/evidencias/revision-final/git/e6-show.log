@@ -1,0 +1,19 @@
+git show --stat --format=fuller b1ff2492bda93315a43cafd1531db27c0b3bcc9a
+commit b1ff2492bda93315a43cafd1531db27c0b3bcc9a
+Author:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+AuthorDate: Wed Nov 4 23:25:37 2026 -0500
+Commit:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+CommitDate: Wed Nov 4 23:25:37 2026 -0500
+
+    feat: notificar cambios validos mediante Observer
+
+ entrega/evidencias/estacion-06.log                  |  6 ++++++
+ src/main/java/biblioteca/Main.java                  |  3 ++-
+ src/main/java/biblioteca/NotificadorEstudiante.java | 10 ++++++++++
+ src/main/java/biblioteca/ObservadorReserva.java     |  4 ++++
+ src/main/java/biblioteca/RegistroEventos.java       |  8 ++++++++
+ src/main/java/biblioteca/Reserva.java               | 16 ++++++++++++++++
+ src/main/java/biblioteca/ReservaFacade.java         |  6 +++++-
+ 7 files changed, 51 insertions(+), 2 deletions(-)
+
+EXIT_CODE=0

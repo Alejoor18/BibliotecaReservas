@@ -1,0 +1,27 @@
+git show --format=fuller --stat cd3a7a814759bf5e085598c79249caa0dd98f55d
+commit cd3a7a814759bf5e085598c79249caa0dd98f55d
+Author:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+AuthorDate: Wed Nov 4 23:38:07 2026 -0500
+Commit:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+CommitDate: Wed Nov 4 23:38:07 2026 -0500
+
+    fix: cerrar concordancia literal y validar la ejecucion final
+
+ README.md                                    |  63 +++++++
+ ejecutar.ps1                                 |  19 +++
+ entrega/evidencias/comandos-ejecutados.log   |   6 +-
+ entrega/evidencias/concordancia-fuentes.json |  65 +++++++
+ entrega/evidencias/concordancia-fuentes.md   |  47 +++++
+ entrega/evidencias/ejecucion-main.log        |  31 +++-
+ entrega/evidencias/ejecucion-script.log      |  29 ++++
+ entrega/evidencias/entorno-ejecucion.json    |  12 +-
+ entrega/evidencias/estaciones.jsonl          |   8 +
+ entrega/evidencias/pruebas.log               | 114 ++++++-------
+ entrega/evidencias/resultados-pruebas.json   |  42 ++---
+ entrega/evidencias/revision-guia.md          | 245 +++++++++++++++++++++++++++
+ entrega/evidencias/verificacion-paquete.json | 154 +++++++++++++++++
+ src/main/java/biblioteca/Cancelada.java      |   5 -
+ src/main/java/biblioteca/Finalizada.java     |   5 -
+ 15 files changed, 744 insertions(+), 101 deletions(-)
+
+EXIT_CODE=0

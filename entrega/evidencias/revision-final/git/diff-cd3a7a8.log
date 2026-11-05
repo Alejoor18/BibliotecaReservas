@@ -1,0 +1,18 @@
+git diff-tree --root --no-commit-id --name-status -r cd3a7a814759bf5e085598c79249caa0dd98f55d
+A	README.md
+A	ejecutar.ps1
+M	entrega/evidencias/comandos-ejecutados.log
+A	entrega/evidencias/concordancia-fuentes.json
+A	entrega/evidencias/concordancia-fuentes.md
+M	entrega/evidencias/ejecucion-main.log
+A	entrega/evidencias/ejecucion-script.log
+M	entrega/evidencias/entorno-ejecucion.json
+A	entrega/evidencias/estaciones.jsonl
+M	entrega/evidencias/pruebas.log
+M	entrega/evidencias/resultados-pruebas.json
+A	entrega/evidencias/revision-guia.md
+A	entrega/evidencias/verificacion-paquete.json
+M	src/main/java/biblioteca/Cancelada.java
+M	src/main/java/biblioteca/Finalizada.java
+
+EXIT_CODE=0

@@ -1,0 +1,10 @@
+git diff-tree --root --no-commit-id --name-status -r 8a88ed0a53f185339d4af0ba67ae458bcb117e80
+A	entrega/evidencias/estacion-05.log
+M	src/main/java/biblioteca/Main.java
+A	src/main/java/biblioteca/RepositorioReservas.java
+A	src/main/java/biblioteca/RepositorioReservasMemoria.java
+A	src/main/java/biblioteca/RepositorioSalas.java
+A	src/main/java/biblioteca/RepositorioSalasMemoria.java
+A	src/main/java/biblioteca/ReservaFacade.java
+
+EXIT_CODE=0

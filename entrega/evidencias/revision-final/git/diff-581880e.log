@@ -1,0 +1,18 @@
+git diff-tree --root --no-commit-id --name-status -r 581880e719ff0f7a43df9363e51c0895363ae37d
+A	entrega/Informe_BibliotecaReservas.md
+A	entrega/Informe_BibliotecaReservas.pdf
+A	entrega/REGENERAR_INFORME.md
+A	entrega/datos_doc.json
+A	entrega/diagramas/clases_ciclo.mmd
+A	entrega/diagramas/clases_ciclo.png
+A	entrega/diagramas/clases_creacion.mmd
+A	entrega/diagramas/clases_creacion.png
+A	entrega/diagramas/flujo.mmd
+A	entrega/diagramas/flujo.png
+A	entrega/evidencias/ejecucion-jar.log
+A	entrega/evidencias/maven-package.log
+A	entrega/evidencias/verificacion-pdf.json
+A	entrega/generar_informe.py
+A	entrega/manifest-documentos.json
+
+EXIT_CODE=0

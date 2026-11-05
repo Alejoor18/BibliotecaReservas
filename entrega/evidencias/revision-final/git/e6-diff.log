@@ -1,0 +1,10 @@
+git diff --name-status codex/estacion-05 codex/estacion-06
+A	entrega/evidencias/estacion-06.log
+M	src/main/java/biblioteca/Main.java
+A	src/main/java/biblioteca/NotificadorEstudiante.java
+A	src/main/java/biblioteca/ObservadorReserva.java
+A	src/main/java/biblioteca/RegistroEventos.java
+M	src/main/java/biblioteca/Reserva.java
+M	src/main/java/biblioteca/ReservaFacade.java
+
+EXIT_CODE=0

@@ -1,0 +1,24 @@
+git show --format=fuller --stat e1765c5820e1661782c93a8d4005500857b8ccd6
+commit e1765c5820e1661782c93a8d4005500857b8ccd6
+Author:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+AuthorDate: Wed Nov 4 23:30:04 2026 -0500
+Commit:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+CommitDate: Wed Nov 4 23:30:04 2026 -0500
+
+    test: comprobar State y los escenarios P01 a P11 sin frameworks
+
+ entrega/estacion-07-state.md               |  16 ++
+ entrega/evidencias/comandos-ejecutados.log |   4 +
+ entrega/evidencias/compilacion.log         |   2 +
+ entrega/evidencias/ejecucion-main.log      |   5 +
+ entrega/evidencias/entorno-ejecucion.json  | 101 ++++++++
+ entrega/evidencias/estacion-06.log         |   8 +-
+ entrega/evidencias/estacion-07.log         |   6 +
+ entrega/evidencias/pruebas.log             | 162 +++++++++++++
+ entrega/evidencias/resultados-pruebas.json |  54 +++++
+ entrega/pruebas/LEEME.md                   |  17 ++
+ entrega/pruebas/PruebasBiblioteca.java     | 369 +++++++++++++++++++++++++++++
+ entrega/pruebas/ejecutar-pruebas.ps1       |  89 +++++++
+ 12 files changed, 829 insertions(+), 4 deletions(-)
+
+EXIT_CODE=0

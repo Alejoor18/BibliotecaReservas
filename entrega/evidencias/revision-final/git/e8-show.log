@@ -1,0 +1,14 @@
+git show --stat --format=fuller dd1322f1273465e03d37144ed12793fa02899274
+commit dd1322f1273465e03d37144ed12793fa02899274
+Author:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+AuthorDate: Wed Nov 4 23:30:07 2026 -0500
+Commit:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+CommitDate: Wed Nov 4 23:30:07 2026 -0500
+
+    feat: integrar el Main final y documentar ejecucion reproducible
+
+ entrega/evidencias/estacion-08.log | 29 ++++++++++++++++
+ src/main/java/biblioteca/Main.java | 69 ++++++++++++++++++++++++++++++++++----
+ 2 files changed, 92 insertions(+), 6 deletions(-)
+
+EXIT_CODE=0

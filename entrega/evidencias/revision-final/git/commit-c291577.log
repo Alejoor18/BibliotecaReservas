@@ -1,0 +1,16 @@
+git show --format=fuller --stat c2915772aebb6472183a642a9f3676e997297738
+commit c2915772aebb6472183a642a9f3676e997297738
+Author:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+AuthorDate: Wed Nov 4 23:24:26 2026 -0500
+Commit:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+CommitDate: Wed Nov 4 23:24:26 2026 -0500
+
+    fix: ajustar Builder y Reserva a las validaciones y API de la guia
+
+ entrega/evidencias/estacion-03.log           |  3 ++
+ src/main/java/biblioteca/Main.java           | 20 ++++----
+ src/main/java/biblioteca/Reserva.java        | 70 +++++++---------------------
+ src/main/java/biblioteca/ReservaBuilder.java | 70 ++++++++++------------------
+ 4 files changed, 57 insertions(+), 106 deletions(-)
+
+EXIT_CODE=0

@@ -1,0 +1,15 @@
+git show --stat --format=fuller 82036bcc6491f318deb02100fc762fd360988d1c
+commit 82036bcc6491f318deb02100fc762fd360988d1c
+Author:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+AuthorDate: Wed Nov 4 23:24:23 2026 -0500
+Commit:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+CommitDate: Wed Nov 4 23:24:23 2026 -0500
+
+    fix: validar las salas y conservar la ejecucion inicial de dominio
+
+ entrega/evidencias/estacion-02.log |  7 +++++++
+ src/main/java/biblioteca/Main.java | 31 +++++++++----------------------
+ src/main/java/biblioteca/Sala.java | 23 +++++++++--------------
+ 3 files changed, 25 insertions(+), 36 deletions(-)
+
+EXIT_CODE=0

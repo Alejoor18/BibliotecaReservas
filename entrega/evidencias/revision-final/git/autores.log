@@ -1,0 +1,17 @@
+git log --all --format=%h | %an <%ae> | %ad | %s --date=iso
+9fcecd5 | AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com> | 2026-11-05 00:27:52 -0500 | test: verificar scripts y 45 casos en Windows PowerShell 5
+3480796 | AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com> | 2026-11-04 23:46:08 -0500 | docs: registrar publicacion y preservar artefactos binarios
+581880e | AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com> | 2026-11-04 23:44:39 -0500 | docs: entregar informe academico PDF y evidencias verificadas
+cd3a7a8 | AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com> | 2026-11-04 23:38:07 -0500 | fix: cerrar concordancia literal y validar la ejecucion final
+dd1322f | AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com> | 2026-11-04 23:30:07 -0500 | feat: integrar el Main final y documentar ejecucion reproducible
+e1765c5 | AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com> | 2026-11-04 23:30:04 -0500 | test: comprobar State y los escenarios P01 a P11 sin frameworks
+b1ff249 | AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com> | 2026-11-04 23:25:37 -0500 | feat: notificar cambios validos mediante Observer
+8a88ed0 | AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com> | 2026-11-04 23:25:33 -0500 | feat: integrar repositorios en memoria y coordinacion con Facade
+8b92663 | AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com> | 2026-11-04 23:25:30 -0500 | test: ejecutar los tres escenarios de seleccion con Strategy
+c291577 | AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com> | 2026-11-04 23:24:26 -0500 | fix: ajustar Builder y Reserva a las validaciones y API de la guia
+82036bc | AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com> | 2026-11-04 23:24:23 -0500 | fix: validar las salas y conservar la ejecucion inicial de dominio
+4b8a602 | AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com> | 2026-11-04 23:17:48 -0500 | docs: modelar flujo y comparar el proyecto con la guia
+7e13a4d | AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com> | 2026-11-04 23:17:20 -0500 | chore: preservar el avance local previo a completar la guia
+5d8bbbe | AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com> | 2026-11-03 10:46:02 -0500 | feat: implementar modelo inicial y patron Builder
+
+EXIT_CODE=0

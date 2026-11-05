@@ -1,0 +1,5 @@
+git diff --name-status codex/estacion-03 codex/estacion-04
+A	entrega/evidencias/estacion-04.log
+M	src/main/java/biblioteca/Main.java
+
+EXIT_CODE=0

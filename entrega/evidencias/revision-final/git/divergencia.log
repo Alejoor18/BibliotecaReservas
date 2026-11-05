@@ -1,0 +1,4 @@
+git rev-list --left-right --count master...origin/master
+0	0
+
+EXIT_CODE=0

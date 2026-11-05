@@ -1,0 +1,17 @@
+git diff-tree --root --no-commit-id --name-status -r 7e13a4dd570933f73279c27441e91ffe9e726798
+M	pom.xml
+A	src/main/java/biblioteca/Cancelada.java
+A	src/main/java/biblioteca/Confirmada.java
+A	src/main/java/biblioteca/EstadoReserva.java
+A	src/main/java/biblioteca/EstrategiaSeleccionSala.java
+M	src/main/java/biblioteca/Estudiante.java
+A	src/main/java/biblioteca/Finalizada.java
+M	src/main/java/biblioteca/Main.java
+A	src/main/java/biblioteca/Pendiente.java
+M	src/main/java/biblioteca/Reserva.java
+A	src/main/java/biblioteca/ReservaBuilder.java
+M	src/main/java/biblioteca/Sala.java
+A	src/main/java/biblioteca/SeleccionPorCapacidad.java
+A	src/main/java/biblioteca/SeleccionSalaPreferida.java
+
+EXIT_CODE=0

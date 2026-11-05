@@ -1,0 +1,9 @@
+git diff-tree --root --no-commit-id --name-status -r 5d8bbbef779e0215bd2339afb9d9378632ec1217
+A	.gitignore
+A	pom.xml
+A	src/main/java/biblioteca/Estudiante.java
+A	src/main/java/biblioteca/Main.java
+A	src/main/java/biblioteca/Reserva.java
+A	src/main/java/biblioteca/Sala.java
+
+EXIT_CODE=0

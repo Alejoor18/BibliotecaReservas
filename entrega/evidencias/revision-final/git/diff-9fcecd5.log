@@ -1,0 +1,12 @@
+git diff-tree --root --no-commit-id --name-status -r 9fcecd5229f5913a087e5506d71109899fe00200
+M	ejecutar.ps1
+A	entrega/evidencias/ejecucion-powershell5.log
+A	entrega/evidencias/powershell5/comandos-ejecutados.log
+A	entrega/evidencias/powershell5/compilacion.log
+A	entrega/evidencias/powershell5/ejecucion-main.log
+A	entrega/evidencias/powershell5/entorno-ejecucion.json
+A	entrega/evidencias/powershell5/pruebas.log
+A	entrega/evidencias/powershell5/resultados-pruebas.json
+M	entrega/pruebas/ejecutar-pruebas.ps1
+
+EXIT_CODE=0

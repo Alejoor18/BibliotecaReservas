@@ -1,0 +1,21 @@
+git show --format=fuller --stat 9fcecd5229f5913a087e5506d71109899fe00200
+commit 9fcecd5229f5913a087e5506d71109899fe00200
+Author:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+AuthorDate: Thu Nov 5 00:27:52 2026 -0500
+Commit:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+CommitDate: Thu Nov 5 00:27:52 2026 -0500
+
+    test: verificar scripts y 45 casos en Windows PowerShell 5
+
+ ejecutar.ps1                                       |   2 +-
+ entrega/evidencias/ejecucion-powershell5.log       |  29 ++++
+ .../evidencias/powershell5/comandos-ejecutados.log |   4 +
+ entrega/evidencias/powershell5/compilacion.log     |   2 +
+ entrega/evidencias/powershell5/ejecucion-main.log  |  28 ++++
+ .../evidencias/powershell5/entorno-ejecucion.json  | 101 +++++++++++++
+ entrega/evidencias/powershell5/pruebas.log         | 162 +++++++++++++++++++++
+ .../evidencias/powershell5/resultados-pruebas.json |  54 +++++++
+ entrega/pruebas/ejecutar-pruebas.ps1               |  23 ++-
+ 9 files changed, 401 insertions(+), 4 deletions(-)
+
+EXIT_CODE=0

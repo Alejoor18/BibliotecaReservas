@@ -1,0 +1,5 @@
+git diff-tree --root --no-commit-id --name-status -r dd1322f1273465e03d37144ed12793fa02899274
+A	entrega/evidencias/estacion-08.log
+M	src/main/java/biblioteca/Main.java
+
+EXIT_CODE=0

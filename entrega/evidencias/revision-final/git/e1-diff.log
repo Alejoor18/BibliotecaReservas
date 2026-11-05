@@ -1,0 +1,6 @@
+git diff --name-status codex/punto-partida codex/estacion-01
+M	.gitignore
+A	entrega/comparacion-inicial.md
+A	entrega/estacion-01-flujo.md
+
+EXIT_CODE=0

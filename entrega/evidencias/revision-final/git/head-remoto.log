@@ -1,0 +1,5 @@
+git ls-remote --symref origin HEAD
+ref: refs/heads/master	HEAD
+9fcecd5229f5913a087e5506d71109899fe00200	HEAD
+
+EXIT_CODE=0

@@ -1,0 +1,3 @@
+git merge-base --is-ancestor codex/estacion-01 master
+
+EXIT_CODE=0

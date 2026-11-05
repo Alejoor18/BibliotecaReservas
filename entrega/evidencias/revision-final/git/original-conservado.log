@@ -1,0 +1,3 @@
+git merge-base --is-ancestor 5d8bbbef779e0215bd2339afb9d9378632ec1217 master
+
+EXIT_CODE=0

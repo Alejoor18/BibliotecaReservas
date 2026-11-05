@@ -1,0 +1,6 @@
+git status -sb
+## master...origin/master
+ M pom.xml
+?? entrega/evidencias/revision-final/
+
+EXIT_CODE=0

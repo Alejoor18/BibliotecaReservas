@@ -1,0 +1,18 @@
+git show --stat --format=fuller 5d8bbbef779e0215bd2339afb9d9378632ec1217
+commit 5d8bbbef779e0215bd2339afb9d9378632ec1217
+Author:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+AuthorDate: Tue Nov 3 10:46:02 2026 -0500
+Commit:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+CommitDate: Tue Nov 3 10:46:02 2026 -0500
+
+    feat: implementar modelo inicial y patron Builder
+
+ .gitignore                               | 36 +++++++++++++++
+ pom.xml                                  | 12 +++++
+ src/main/java/biblioteca/Estudiante.java | 20 ++++++++
+ src/main/java/biblioteca/Main.java       | 27 +++++++++++
+ src/main/java/biblioteca/Reserva.java    | 79 ++++++++++++++++++++++++++++++++
+ src/main/java/biblioteca/Sala.java       | 33 +++++++++++++
+ 6 files changed, 207 insertions(+)
+
+EXIT_CODE=0

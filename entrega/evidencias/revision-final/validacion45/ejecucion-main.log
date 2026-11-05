@@ -1,0 +1,28 @@
+﻿--- ESCENARIO PRINCIPAL ---
+Notificación a Laura: su reserva R-7552DF45 cambió de Pendiente a Confirmada.
+Evento registrado: R-7552DF45 cambió de Pendiente a Confirmada.
+Reserva R-7552DF45 | Laura | 2026-11-12 14:00 | Sala B (B, capacidad: 4) | Estado: Confirmada
+
+Laura cancela la reserva:
+Notificación a Laura: su reserva R-7552DF45 cambió de Confirmada a Cancelada.
+Evento registrado: R-7552DF45 cambió de Confirmada a Cancelada.
+Reserva R-7552DF45 | Laura | 2026-11-12 14:00 | Sala B (B, capacidad: 4) | Estado: Cancelada
+
+Intento inválido: confirmar una reserva cancelada:
+Operación rechazada: No se puede confirmar una reserva cancelada.
+
+--- PRUEBA DE SALA PREFERIDA ---
+Notificación a Andrés: su reserva R-0E09193A cambió de Pendiente a Confirmada.
+Evento registrado: R-0E09193A cambió de Pendiente a Confirmada.
+Reserva R-0E09193A | Andrés | 2026-11-13 10:00 | Sala C (C, capacidad: 6) | Estado: Confirmada
+
+--- PRUEBA SIN SALA ADECUADA ---
+No hay una sala disponible que cumpla la solicitud.
+
+--- PRUEBA DE FINALIZACIÓN ---
+Notificación a Samuel: su reserva R-D2491296 cambió de Pendiente a Confirmada.
+Evento registrado: R-D2491296 cambió de Pendiente a Confirmada.
+Notificación a Samuel: su reserva R-D2491296 cambió de Confirmada a Finalizada.
+Evento registrado: R-D2491296 cambió de Confirmada a Finalizada.
+Reserva R-D2491296 | Samuel | 2026-11-15 11:00 | Sala A (A, capacidad: 2) | Estado: Finalizada
+EXIT_CODE=0

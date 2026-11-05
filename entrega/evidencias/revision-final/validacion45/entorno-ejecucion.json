@@ -1,0 +1,101 @@
+﻿{
+    "ejecutadoUtc":  "2026-11-05T07:00:26.8411649Z",
+    "ejecutadoBogota":  "2026-11-05 02:00:26",
+    "zonaHoraria":  "America/Bogota",
+    "javaHome":  "C:\\Users\\aleja\\.jdks\\ms-17.0.21.0.2",
+    "javaVersion":  "openjdk version \"17.0.21.0.2\" 2026-10-22 LTS\r\nOpenJDK Runtime Environment Microsoft-15779939 (build 17.0.21.0.2+1-LTS)\r\nOpenJDK 64-Bit Server VM Microsoft-15779939 (build 17.0.21.0.2+1-LTS, mixed mode, sharing)",
+    "javacVersion":  "javac 17.0.21.0.2",
+    "powershellVersion":  "5.1.26100.8115",
+    "clasesTemporales":  "C:\\Users\\aleja\\AppData\\Local\\Temp\\BibliotecaReservas-pruebas-ef9d16e02fdf423587694af78f672a6e",
+    "fuentesOficiales":  21,
+    "compilacionExitCode":  0,
+    "pruebasExitCode":  0,
+    "mainExitCode":  0,
+    "fuentesSha256":  [
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\Cancelada.java",
+                              "Hash":  "94A04D4C4CDAF1A3400877C4393FD701B2C4BB064BCDBFB52F8486BA7639240C"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\Confirmada.java",
+                              "Hash":  "B47820BF022E79F30C95B4AF601A47EB981C64E78A64EC366CB797D7B734FB75"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\EstadoReserva.java",
+                              "Hash":  "BF3C3C946652B70D246C6273AF6799452ED4574E186B02105310F0975971251A"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\EstrategiaSeleccionSala.java",
+                              "Hash":  "39CDF3759FC2E9EEA25203F14D7D3800E764EB07D88C916785A56AE647148215"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\Estudiante.java",
+                              "Hash":  "05AD33B0046DDEF95133A76C91F6E66173F37B419242CEB754F1AC5498FF6E3F"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\Finalizada.java",
+                              "Hash":  "5F1EBEBE4DD50D91AE06AAE1794E78205D7402599D31FF450FF8DA790CD04054"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\Main.java",
+                              "Hash":  "6D30A5F77B388A2553F5B8914C1FC50664B4E03C95CF6CAFF02603B045B267B0"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\NotificadorEstudiante.java",
+                              "Hash":  "23EB84633D18C52402456D82D0E2D3FFD6C82D50BEF55FA161FC6EF008DB3232"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\ObservadorReserva.java",
+                              "Hash":  "715F1B3A1933839B12F1779FACE4BC82F2B34ED6CC3A4E5F45160CE4126FB895"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\Pendiente.java",
+                              "Hash":  "86EDDA94C6BF20004C47AC35730513D54B8DD2BC7C355B27012A9C98FA35DE65"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\RegistroEventos.java",
+                              "Hash":  "9167D90A3AEC866699120B2F472E87CD6E7D6319E1CA4AE3D846E9F8659873B3"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\RepositorioReservas.java",
+                              "Hash":  "EA267FD75AA554F584D3F54A078D586B6B784872277308BE4A54A51133308E6F"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\RepositorioReservasMemoria.java",
+                              "Hash":  "EF8265E31E1EF523DF8454BEA0D8BB58CD3ED019F1AB4F5294F83BE9F24F4086"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\RepositorioSalas.java",
+                              "Hash":  "CC49B2F9B60C1B4634E0B6394FDBE08D17B9A7FFA10BB70BB82511E442A46105"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\RepositorioSalasMemoria.java",
+                              "Hash":  "D3AB001F44B8487A9CD6A7BD1C29EE8A774F493E5C6D967CA74E9CC76B985B4E"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\Reserva.java",
+                              "Hash":  "47CFB5AD1A8801C96F2322307CFBB29590EF8B4D5327514816788B60F2BD3A63"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\ReservaBuilder.java",
+                              "Hash":  "0C21C1E5F9A4E1A0E1BAA4929A45398FC46B5C02672EF0AACEAD42590D888B27"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\ReservaFacade.java",
+                              "Hash":  "05BB1BA3F25C091A8DCDBB56C676209D87F54769C5BF5FE29C891EAD7180AAC8"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\Sala.java",
+                              "Hash":  "FD1AEE64BD58ABCC31F2007EDC8DCBA4AFA819E72AA17A9181E57D1F33BF5334"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\SeleccionPorCapacidad.java",
+                              "Hash":  "E5E7CC3B0A961C052C6F9B81E5CFBCC233A774B4965A32781F36F23DF15161BA"
+                          },
+                          {
+                              "Path":  "C:\\Users\\aleja\\OneDrive\\Escritorio\\BibliotecaReservas\\src\\main\\java\\biblioteca\\SeleccionSalaPreferida.java",
+                              "Hash":  "70212B66EEE69F8FC586D492917F434895F1A08C5BE14EF77B4BAF747DC07190"
+                          }
+                      ],
+    "harnessSha256":  "275EA3B2094F2F8C201BBAD69ADE105E24F42551CFB2F3D857D8BD9EBFCF5010"
+}

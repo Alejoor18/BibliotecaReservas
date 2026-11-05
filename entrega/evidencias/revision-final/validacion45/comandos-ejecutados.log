@@ -1,0 +1,4 @@
+﻿JDK: C:\Users\aleja\.jdks\ms-17.0.21.0.2
+Compilación: & "C:\Users\aleja\.jdks\ms-17.0.21.0.2\bin\javac.exe" --release 17 -encoding UTF-8 -Xlint:all -d "C:\Users\aleja\AppData\Local\Temp\BibliotecaReservas-pruebas-ef9d16e02fdf423587694af78f672a6e" <21 fuentes Java oficiales> "C:\Users\aleja\OneDrive\Escritorio\BibliotecaReservas\entrega\pruebas\PruebasBiblioteca.java"
+Pruebas: & "C:\Users\aleja\.jdks\ms-17.0.21.0.2\bin\java.exe" -Dfile.encoding=UTF-8 -cp "C:\Users\aleja\AppData\Local\Temp\BibliotecaReservas-pruebas-ef9d16e02fdf423587694af78f672a6e" PruebasBiblioteca "C:\Users\aleja\OneDrive\Escritorio\BibliotecaReservas\entrega\evidencias\revision-final\validacion45\resultados-pruebas.json"
+Main: & "C:\Users\aleja\.jdks\ms-17.0.21.0.2\bin\java.exe" -Dfile.encoding=UTF-8 -cp "C:\Users\aleja\AppData\Local\Temp\BibliotecaReservas-pruebas-ef9d16e02fdf423587694af78f672a6e" biblioteca.Main

@@ -1,0 +1,26 @@
+git show --format=fuller --stat 7e13a4dd570933f73279c27441e91ffe9e726798
+commit 7e13a4dd570933f73279c27441e91ffe9e726798
+Author:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+AuthorDate: Wed Nov 4 23:17:20 2026 -0500
+Commit:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+CommitDate: Wed Nov 4 23:17:20 2026 -0500
+
+    chore: preservar el avance local previo a completar la guia
+
+ pom.xml                                            |  22 +++-
+ src/main/java/biblioteca/Cancelada.java            |  28 +++++
+ src/main/java/biblioteca/Confirmada.java           |  22 ++++
+ src/main/java/biblioteca/EstadoReserva.java        |   9 ++
+ .../java/biblioteca/EstrategiaSeleccionSala.java   |   9 ++
+ src/main/java/biblioteca/Estudiante.java           |  13 ++-
+ src/main/java/biblioteca/Finalizada.java           |  28 +++++
+ src/main/java/biblioteca/Main.java                 |   8 +-
+ src/main/java/biblioteca/Pendiente.java            |  22 ++++
+ src/main/java/biblioteca/Reserva.java              | 130 +++++++++++----------
+ src/main/java/biblioteca/ReservaBuilder.java       |  69 +++++++++++
+ src/main/java/biblioteca/Sala.java                 |  18 ++-
+ .../java/biblioteca/SeleccionPorCapacidad.java     |  18 +++
+ .../java/biblioteca/SeleccionSalaPreferida.java    |  28 +++++
+ 14 files changed, 342 insertions(+), 82 deletions(-)
+
+EXIT_CODE=0

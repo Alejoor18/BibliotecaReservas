@@ -1,0 +1,14 @@
+git show --format=fuller --stat 8b926639134aa859d1d424f8e6fc43f3121994cf
+commit 8b926639134aa859d1d424f8e6fc43f3121994cf
+Author:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+AuthorDate: Wed Nov 4 23:25:30 2026 -0500
+Commit:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+CommitDate: Wed Nov 4 23:25:30 2026 -0500
+
+    test: ejecutar los tres escenarios de seleccion con Strategy
+
+ entrega/evidencias/estacion-04.log |  5 +++++
+ src/main/java/biblioteca/Main.java | 25 ++++++++++++++-----------
+ 2 files changed, 19 insertions(+), 11 deletions(-)
+
+EXIT_CODE=0

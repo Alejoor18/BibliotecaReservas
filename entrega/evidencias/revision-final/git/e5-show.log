@@ -1,0 +1,19 @@
+git show --stat --format=fuller 8a88ed0a53f185339d4af0ba67ae458bcb117e80
+commit 8a88ed0a53f185339d4af0ba67ae458bcb117e80
+Author:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+AuthorDate: Wed Nov 4 23:25:33 2026 -0500
+Commit:     AlejandrOspinaForja <288077506+AlejandrOspinaForja@users.noreply.github.com>
+CommitDate: Wed Nov 4 23:25:33 2026 -0500
+
+    feat: integrar repositorios en memoria y coordinacion con Facade
+
+ entrega/evidencias/estacion-05.log                 |  4 +++
+ src/main/java/biblioteca/Main.java                 | 25 ++++++----------
+ src/main/java/biblioteca/RepositorioReservas.java  |  4 +++
+ .../biblioteca/RepositorioReservasMemoria.java     | 14 +++++++++
+ src/main/java/biblioteca/RepositorioSalas.java     |  5 ++++
+ .../java/biblioteca/RepositorioSalasMemoria.java   | 12 ++++++++
+ src/main/java/biblioteca/ReservaFacade.java        | 34 ++++++++++++++++++++++
+ 7 files changed, 82 insertions(+), 16 deletions(-)
+
+EXIT_CODE=0

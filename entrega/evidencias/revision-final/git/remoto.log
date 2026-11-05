@@ -1,0 +1,5 @@
+git remote -v
+origin	https://github.com/Alejoor18/BibliotecaReservas (fetch)
+origin	https://github.com/Alejoor18/BibliotecaReservas (push)
+
+EXIT_CODE=0

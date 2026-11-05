@@ -1,0 +1,9 @@
+git diff-tree --root --no-commit-id --name-status -r 3480796bb9060e1d7b122301c080f65b8df44c44
+A	.gitattributes
+A	entrega/evidencias/git-estado.log
+A	entrega/evidencias/git-historial.log
+A	entrega/evidencias/git-ramas.log
+A	entrega/evidencias/publicacion-github.log
+A	entrega/evidencias/ramas-remotas.log
+
+EXIT_CODE=0

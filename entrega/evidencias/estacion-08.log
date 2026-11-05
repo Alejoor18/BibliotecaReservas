@@ -1,0 +1,29 @@
+Compilacion: javac --release 17 -encoding UTF-8 -Xlint:all
+Ejecucion: java -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -cp target/estacion-08 biblioteca.Main
+--- ESCENARIO PRINCIPAL ---
+Notificación a Laura: su reserva R-F600DE0F cambió de Pendiente a Confirmada.
+Evento registrado: R-F600DE0F cambió de Pendiente a Confirmada.
+Reserva R-F600DE0F | Laura | 2026-11-11 14:00 | Sala B (B, capacidad: 4) | Estado: Confirmada
+
+Laura cancela la reserva:
+Notificación a Laura: su reserva R-F600DE0F cambió de Confirmada a Cancelada.
+Evento registrado: R-F600DE0F cambió de Confirmada a Cancelada.
+Reserva R-F600DE0F | Laura | 2026-11-11 14:00 | Sala B (B, capacidad: 4) | Estado: Cancelada
+
+Intento inválido: confirmar una reserva cancelada:
+Operación rechazada: No se puede confirmar una reserva cancelada.
+
+--- PRUEBA DE SALA PREFERIDA ---
+Notificación a Andrés: su reserva R-38D05CE6 cambió de Pendiente a Confirmada.
+Evento registrado: R-38D05CE6 cambió de Pendiente a Confirmada.
+Reserva R-38D05CE6 | Andrés | 2026-11-12 10:00 | Sala C (C, capacidad: 6) | Estado: Confirmada
+
+--- PRUEBA SIN SALA ADECUADA ---
+No hay una sala disponible que cumpla la solicitud.
+
+--- PRUEBA DE FINALIZACIÓN ---
+Notificación a Samuel: su reserva R-960F76CA cambió de Pendiente a Confirmada.
+Evento registrado: R-960F76CA cambió de Pendiente a Confirmada.
+Notificación a Samuel: su reserva R-960F76CA cambió de Confirmada a Finalizada.
+Evento registrado: R-960F76CA cambió de Confirmada a Finalizada.
+Reserva R-960F76CA | Samuel | 2026-11-14 11:00 | Sala A (A, capacidad: 2) | Estado: Finalizada

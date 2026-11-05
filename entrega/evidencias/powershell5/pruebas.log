@@ -1,0 +1,162 @@
+﻿[PASS] P01 | Construcción con todos los datos y código generado
+Reserva R-11E94C6A | Laura | 2026-11-12 14:00 | Sala B (B, capacidad: 4) | Estado: Pendiente
+[PASS] P02 | Construcción sin estudiante rechazada con mensaje claro
+Rechazo observado: IllegalStateException: Faltan datos obligatorios de la reserva.
+[PASS] P03 | Capacidad para cuatro personas selecciona Sala B
+Sala B (B, capacidad: 4)
+[PASS] P04 | Preferida C para cuatro personas selecciona Sala C
+Sala C (C, capacidad: 6)
+[PASS] P05 | Preferida B para siete personas no selecciona sala
+Selección observada: Optional.empty
+[PASS] P06 | La fachada registra y confirma la misma reserva
+Notificación a Laura: su reserva R-B8B58BD7 cambió de Pendiente a Confirmada.
+Evento registrado: R-B8B58BD7 cambió de Pendiente a Confirmada.
+Reservas registradas: 1
+Reserva R-B8B58BD7 | Laura | 2026-11-12 14:00 | Sala B (B, capacidad: 4) | Estado: Confirmada
+[PASS] P07 | Confirmación notifica a los dos observadores reales
+Notificación a Laura: su reserva R-45925726 cambió de Pendiente a Confirmada.
+Evento registrado: R-45925726 cambió de Pendiente a Confirmada.
+NotificadorEstudiante: 1 evento; RegistroEventos: 1 evento.
+[PASS] P08 | Cancelar una confirmada cambia el estado y notifica
+Notificación a Laura: su reserva R-27CBC142 cambió de Pendiente a Confirmada.
+Evento registrado: R-27CBC142 cambió de Pendiente a Confirmada.
+Notificación a Laura: su reserva R-27CBC142 cambió de Confirmada a Cancelada.
+Evento registrado: R-27CBC142 cambió de Confirmada a Cancelada.
+Tras cancelar: Cancelada; eventos acumulados por observador: 2.
+[PASS] P09 | Confirmar cancelada se rechaza sin nuevas notificaciones
+Notificación a Laura: su reserva R-827706DB cambió de Pendiente a Confirmada.
+Evento registrado: R-827706DB cambió de Pendiente a Confirmada.
+Notificación a Laura: su reserva R-827706DB cambió de Confirmada a Cancelada.
+Evento registrado: R-827706DB cambió de Confirmada a Cancelada.
+Inicio del intento inválido; eventos por observador antes: 2.
+Rechazo observado: IllegalStateException: No se puede confirmar una reserva cancelada.
+Eventos por observador después: 2; diferencia: 0.
+[PASS] P10 | Diez personas no crean ni registran reserva
+No hay una sala disponible que cumpla la solicitud.
+Resultado: Optional.empty; registros: 0; eventos: 0.
+[PASS] P11 | Finalizar confirmada cambia el estado y notifica
+Notificación a Laura: su reserva R-136CE0B9 cambió de Pendiente a Confirmada.
+Evento registrado: R-136CE0B9 cambió de Pendiente a Confirmada.
+Notificación a Laura: su reserva R-136CE0B9 cambió de Confirmada a Finalizada.
+Evento registrado: R-136CE0B9 cambió de Confirmada a Finalizada.
+Tras finalizar: Finalizada; eventos acumulados por observador: 2.
+[PASS] T01 | Pendiente / confirmar
+Notificación a Laura: su reserva R-28702491 cambió de Pendiente a Confirmada.
+Evento registrado: R-28702491 cambió de Pendiente a Confirmada.
+Estado observado: Confirmada; eventos nuevos por observador: 1
+[PASS] T02 | Pendiente / cancelar
+Notificación a Laura: su reserva R-3E83EF1F cambió de Pendiente a Cancelada.
+Evento registrado: R-3E83EF1F cambió de Pendiente a Cancelada.
+Estado observado: Cancelada; eventos nuevos por observador: 1
+[PASS] T03 | Pendiente / finalizar
+Rechazo observado: IllegalStateException: No se puede finalizar una reserva pendiente.
+Estado observado: Pendiente; eventos nuevos por observador: 0
+[PASS] T04 | Confirmada / confirmar
+Notificación a Laura: su reserva R-A1A932B0 cambió de Pendiente a Confirmada.
+Evento registrado: R-A1A932B0 cambió de Pendiente a Confirmada.
+Rechazo observado: IllegalStateException: La reserva ya está confirmada.
+Estado observado: Confirmada; eventos nuevos por observador: 0
+[PASS] T05 | Confirmada / cancelar
+Notificación a Laura: su reserva R-F6773CB5 cambió de Pendiente a Confirmada.
+Evento registrado: R-F6773CB5 cambió de Pendiente a Confirmada.
+Notificación a Laura: su reserva R-F6773CB5 cambió de Confirmada a Cancelada.
+Evento registrado: R-F6773CB5 cambió de Confirmada a Cancelada.
+Estado observado: Cancelada; eventos nuevos por observador: 1
+[PASS] T06 | Confirmada / finalizar
+Notificación a Laura: su reserva R-963AC42A cambió de Pendiente a Confirmada.
+Evento registrado: R-963AC42A cambió de Pendiente a Confirmada.
+Notificación a Laura: su reserva R-963AC42A cambió de Confirmada a Finalizada.
+Evento registrado: R-963AC42A cambió de Confirmada a Finalizada.
+Estado observado: Finalizada; eventos nuevos por observador: 1
+[PASS] T07 | Cancelada / confirmar
+Notificación a Laura: su reserva R-958E14AC cambió de Pendiente a Cancelada.
+Evento registrado: R-958E14AC cambió de Pendiente a Cancelada.
+Rechazo observado: IllegalStateException: No se puede confirmar una reserva cancelada.
+Estado observado: Cancelada; eventos nuevos por observador: 0
+[PASS] T08 | Cancelada / cancelar
+Notificación a Laura: su reserva R-52AD0ED4 cambió de Pendiente a Cancelada.
+Evento registrado: R-52AD0ED4 cambió de Pendiente a Cancelada.
+Rechazo observado: IllegalStateException: La reserva ya está cancelada.
+Estado observado: Cancelada; eventos nuevos por observador: 0
+[PASS] T09 | Cancelada / finalizar
+Notificación a Laura: su reserva R-34648FDE cambió de Pendiente a Cancelada.
+Evento registrado: R-34648FDE cambió de Pendiente a Cancelada.
+Rechazo observado: IllegalStateException: No se puede finalizar una reserva cancelada.
+Estado observado: Cancelada; eventos nuevos por observador: 0
+[PASS] T10 | Finalizada / confirmar
+Notificación a Laura: su reserva R-5DB58F89 cambió de Pendiente a Confirmada.
+Evento registrado: R-5DB58F89 cambió de Pendiente a Confirmada.
+Notificación a Laura: su reserva R-5DB58F89 cambió de Confirmada a Finalizada.
+Evento registrado: R-5DB58F89 cambió de Confirmada a Finalizada.
+Rechazo observado: IllegalStateException: No se puede confirmar una reserva finalizada.
+Estado observado: Finalizada; eventos nuevos por observador: 0
+[PASS] T11 | Finalizada / cancelar
+Notificación a Laura: su reserva R-4394E2E7 cambió de Pendiente a Confirmada.
+Evento registrado: R-4394E2E7 cambió de Pendiente a Confirmada.
+Notificación a Laura: su reserva R-4394E2E7 cambió de Confirmada a Finalizada.
+Evento registrado: R-4394E2E7 cambió de Confirmada a Finalizada.
+Rechazo observado: IllegalStateException: No se puede cancelar una reserva finalizada.
+Estado observado: Finalizada; eventos nuevos por observador: 0
+[PASS] T12 | Finalizada / finalizar
+Notificación a Laura: su reserva R-4E3EC1A7 cambió de Pendiente a Confirmada.
+Evento registrado: R-4E3EC1A7 cambió de Pendiente a Confirmada.
+Notificación a Laura: su reserva R-4E3EC1A7 cambió de Confirmada a Finalizada.
+Evento registrado: R-4E3EC1A7 cambió de Confirmada a Finalizada.
+Rechazo observado: IllegalStateException: La reserva ya está finalizada.
+Estado observado: Finalizada; eventos nuevos por observador: 0
+[PASS] V01 | Builder rechaza fecha ausente
+Rechazo observado: IllegalStateException: Faltan datos obligatorios de la reserva.
+[PASS] V02 | Builder rechaza hora ausente
+Rechazo observado: IllegalStateException: Faltan datos obligatorios de la reserva.
+[PASS] V03 | Builder rechaza sala ausente
+Rechazo observado: IllegalStateException: Faltan datos obligatorios de la reserva.
+[PASS] V04 | Builder rechaza fecha pasada
+Rechazo observado: IllegalStateException: Fecha, duración o cantidad de personas inválida.
+[PASS] V05 | Builder rechaza duración cero
+Rechazo observado: IllegalStateException: Fecha, duración o cantidad de personas inválida.
+[PASS] V06 | Builder rechaza duración negativa
+Rechazo observado: IllegalStateException: Fecha, duración o cantidad de personas inválida.
+[PASS] V07 | Builder rechaza cero personas
+Rechazo observado: IllegalStateException: Fecha, duración o cantidad de personas inválida.
+[PASS] V08 | Builder rechaza personas negativas
+Rechazo observado: IllegalStateException: Fecha, duración o cantidad de personas inválida.
+[PASS] V09 | Builder rechaza exceso de capacidad
+Rechazo observado: IllegalStateException: La sala no tiene capacidad suficiente.
+[PASS] V10 | Sala rechaza capacidad cero
+Rechazo observado: IllegalArgumentException: Datos de sala inválidos.
+[PASS] V11 | Sala rechaza capacidad negativa
+Rechazo observado: IllegalArgumentException: Datos de sala inválidos.
+[PASS] V12 | Estudiante rechaza identificador nulo y nombre blanco
+Rechazo observado: IllegalArgumentException: Identificador y nombre son obligatorios.
+Rechazo observado: IllegalArgumentException: Identificador y nombre son obligatorios.
+[PASS] V13 | Sala rechaza código blanco y nombre nulo
+Rechazo observado: IllegalArgumentException: Datos de sala inválidos.
+Rechazo observado: IllegalArgumentException: Datos de sala inválidos.
+[PASS] V14 | Preferida rechaza código nulo o blanco
+Rechazo observado: IllegalArgumentException: Debe indicar la sala preferida.
+Rechazo observado: IllegalArgumentException: Debe indicar la sala preferida.
+[PASS] V15 | Preferida compara código sin distinguir mayúsculas
+Código solicitado: c; seleccionado: C.
+[PASS] V16 | Una lista de salas vacía no produce selección
+Ambas estrategias devolvieron Optional.empty.
+[PASS] V17 | Repositorio expone una vista inmodificable
+Notificación a Laura: su reserva R-EED32AC9 cambió de Pendiente a Confirmada.
+Evento registrado: R-EED32AC9 cambió de Pendiente a Confirmada.
+clear() rechazado con UnsupportedOperationException.
+[PASS] V18 | Retirar observadores durante notificación usa copia estable
+Eventos observados: [primero:Confirmada, segundo:Confirmada, primero:Cancelada]
+[PASS] V19 | El cambio de estado interno no es público
+cambiarEstado tiene acceso de paquete.
+[PASS] V20 | Disponibilidad simulada permite reutilizar sala en varias reservas
+Notificación a Laura: su reserva R-76E52631 cambió de Pendiente a Confirmada.
+Evento registrado: R-76E52631 cambió de Pendiente a Confirmada.
+Notificación a Laura: su reserva R-77BD0A2E cambió de Pendiente a Confirmada.
+Evento registrado: R-77BD0A2E cambió de Pendiente a Confirmada.
+Dos reservas para B en el mismo horario, conforme al alcance simulado.
+[PASS] V21 | Datos inválidos no se guardan ni notifican en Facade
+Rechazo observado: IllegalStateException: Faltan datos obligatorios de la reserva.
+Registros: 0; eventos: 0.
+[PASS] V22 | Sala y Reserva incluyen la sala legible en consola
+Reserva R-929C7302 | Laura | 2026-11-12 14:00 | Sala B (B, capacidad: 4) | Estado: Pendiente
+RESUMEN: 45/45 casos correctos.
+EXIT_CODE=0

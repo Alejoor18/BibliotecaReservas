@@ -1,4 +1,4 @@
-param(
+﻿param(
     [string]$ProjectRoot = (Join-Path $PSScriptRoot '..\..'),
     [string]$JavaHome,
     [string]$OutputDirectory
@@ -14,6 +14,21 @@ function Invoke-NativeCapture {
     $ErrorActionPreference = 'Continue'
     $lines = @(& $Executable @Arguments 2>&1 | ForEach-Object { $_.ToString() })
     return [pscustomobject]@{ Output = $lines; ExitCode = $LASTEXITCODE }
+}
+
+# SHA256 mediante .NET para funcionar también cuando Windows PowerShell
+# hereda PSModulePath de otro host y no puede cargar Get-FileHash.
+function Get-Sha256 {
+    param([string]$FilePath)
+    $stream = [System.IO.File]::OpenRead($FilePath)
+    $algorithm = [System.Security.Cryptography.SHA256]::Create()
+    try {
+        return ([System.BitConverter]::ToString($algorithm.ComputeHash($stream))).Replace('-', '')
+    }
+    finally {
+        $algorithm.Dispose()
+        $stream.Dispose()
+    }
 }
 $ProjectRoot = (Resolve-Path -LiteralPath $ProjectRoot).Path
 if (-not $OutputDirectory) { $OutputDirectory = Join-Path $ProjectRoot 'entrega\evidencias' }
@@ -81,8 +96,10 @@ $metadata = [ordered]@{
     compilacionExitCode = $compileExit
     pruebasExitCode = $testExit
     mainExitCode = $mainExit
-    fuentesSha256 = @(Get-FileHash -LiteralPath $sources -Algorithm SHA256 | Select-Object Path, Hash)
-    harnessSha256 = (Get-FileHash -LiteralPath $harness -Algorithm SHA256).Hash
+    fuentesSha256 = @($sources | ForEach-Object {
+        [pscustomobject]@{ Path = $_; Hash = (Get-Sha256 -FilePath $_) }
+    })
+    harnessSha256 = Get-Sha256 -FilePath $harness
 }
 $metadata | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $OutputDirectory 'entorno-ejecucion.json') -Encoding UTF8
 if ($testExit -ne 0 -or $mainExit -ne 0) { throw "Verificación fallida: pruebas=$testExit; Main=$mainExit. Revise los logs." }

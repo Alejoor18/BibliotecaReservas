@@ -1,4 +1,4 @@
-param([string]$JavaHome)
+﻿param([string]$JavaHome)
 $ErrorActionPreference = 'Stop'
 [Console]::OutputEncoding = New-Object System.Text.UTF8Encoding($false)
 if (-not $JavaHome) {

@@ -34,3 +34,9 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+# Material de entrada local conservado; no forma parte de la entrega versionada.
+/01_GUIA_CAPTURAS/
+/02_VIDEO_ORIGINAL/
+/03_PROMPT_Y_PLAN/
+/04_REFERENCIAS_PROYECTO_PREVIO/

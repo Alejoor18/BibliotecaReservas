@@ -1,29 +1,16 @@
-
 package biblioteca;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
+import java.util.List;
 
 public class Main {
-
     public static void main(String[] args) {
-
-        Estudiante estudiante =
-                new Estudiante("1001", "Alejandro");
-
-        Sala sala = new Sala("B", "Sala B", 4);
-
-        Reserva reserva = new ReservaBuilder()
-                .codigo("R001")
-                .estudiante(estudiante)
-                .sala(sala)
-                .fecha(LocalDate.of(2026, 11, 5))
-                .horarioInicio(LocalTime.of(10, 0))
-                .duracionHoras(2)
-                .cantidadPersonas(3)
-                .build();
-
-        System.out.println("=== SISTEMA DE BIBLIOTECA ===");
-        System.out.println(reserva);
+        List<Sala> salas = List.of(
+            new Sala("A", "Sala A", 2),
+            new Sala("B", "Sala B", 4),
+            new Sala("C", "Sala C", 6),
+            new Sala("D", "Sala D", 8)
+        );
+        System.out.println("Salas de la biblioteca:");
+        salas.forEach(System.out::println);
     }
 }

@@ -1,0 +1,7 @@
+Compilacion: javac --release 17 -encoding UTF-8 -Xlint:all
+Ejecucion: java -Dfile.encoding=UTF-8 -cp target/estacion-02 biblioteca.Main
+Salas de la biblioteca:
+Sala A (A, capacidad: 2)
+Sala B (B, capacidad: 4)
+Sala C (C, capacidad: 6)
+Sala D (D, capacidad: 8)
